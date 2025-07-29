@@ -7,11 +7,37 @@
     <title>Note App - JavaScript</title>
     <!-- ------------------------------- favicon -->
     <link rel="shortcut icon" href="./img/logo.png" type="image/x-icon">
+    <!-- ------------------------------- logo -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css" integrity="sha512-kJlvECunwXftkPwyvHbclArO8wszgBGisiLeuDFwNM8ws+wKIw0sv1os3ClWZOcrEB2eRXULYUsm8OVRGJKwGA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- ------------------------------- tailwind -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
-<body>
-    
+<body class="w-full h-screen bg-gray-900 relative flex items-center justify-center">
+    <div class="w-[95%] max-w-[1240px] min-h-[650px] bg-slate-800 rounded-lg p-10">
+        <div class="w-full flex items-center justify-between">
+            <div class="w-auto flex items-center justify-center gap-4">
+                <h1 class="font-medium text-white text-3xl">Notes</h1>
+                <div class="w-8 h-8">
+                    <img src="./img/logo.png" alt="logo" class="w-full h-full object-cover">
+                </div>
+            </div>
+            <div class="w-auto">
+                <button class="flex items-center justify-center gap-2 bg-emerald-700 px-6 py-3 rounded-md">
+                    <div class="w-7 h-6 flex items-center justify-center">
+                        <i class="ri-add-circle-fill text-[28px] text-white"></i>
+                    </div>
+                    <span class="text-xl font-medium text-white">Create</span>
+                </button>
+            </div>
+        </div>
+        <div class="border border-gray-700 mt-5"></div>
+    </div>
+
+
+    <div class="absolute bottom-8 right-8">
+        <p class="text-sm text-white opacity-30">Developed by Rakibul Rahman &copy; 2025</p>
+    </div>
+
     <!-- ------------------------------- script -->
     <script src="./js/script.js"></script>
 </body>
