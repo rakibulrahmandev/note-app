@@ -9,6 +9,8 @@
     <link rel="shortcut icon" href="./img/logo.png" type="image/x-icon">
     <!-- ------------------------------- logo -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css" integrity="sha512-kJlvECunwXftkPwyvHbclArO8wszgBGisiLeuDFwNM8ws+wKIw0sv1os3ClWZOcrEB2eRXULYUsm8OVRGJKwGA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- ------------------------------- logo -->
+    <link rel="stylesheet" href="./css/style.css">
     <!-- ------------------------------- tailwind -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
@@ -22,7 +24,7 @@
                 </div>
             </div>
             <div class="w-auto">
-                <button class="flex items-center justify-center gap-2 bg-emerald-700 px-6 py-3 rounded-md">
+                <button id="create-btn" class="flex items-center justify-center gap-2 bg-emerald-700 px-6 py-3 rounded-md cursor-pointer">
                     <div class="w-7 h-6 flex items-center justify-center">
                         <i class="ri-add-circle-fill text-[28px] text-white"></i>
                     </div>
@@ -30,7 +32,15 @@
                 </button>
             </div>
         </div>
-        <div class="border border-gray-700 mt-5"></div>
+        <div class="border border-gray-700 mt-5 mb-7"></div>
+        <div id="note-container" class="w-full min-h-auto grid grid-cols-4 gap-5">
+            <!-- <div class="w-full h-[150px] bg-slate-700 py-3 pl-3 pr-[7px] rounded-md overflow-y-scroll overflow-x-hidden text-white transition-all ease-linear duration-1000 relative group">
+                <div id="note-box" class="w-full h-full border-none outline-none" contenteditable="true"></div>
+                <button id="delete-btn" class="py-2 px-3 rounded-md absolute bottom-3 right-3 cursor-pointer bg-emerald-700 hidden transition-all ease-linear duration-1000 group-hover:block">
+                    <i class="ri-delete-bin-6-line text-white text-xl"></i>
+                </button>
+            </div> -->
+        </div>
     </div>
 
 
